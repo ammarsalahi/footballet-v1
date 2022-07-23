@@ -1,0 +1,69 @@
+{% load static %}
+<nav class="navbar is-fixed-top is-success" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+      فوتبالت
+    </a>
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" id="barss">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+  </div>
+  <div id="themenu" class="navbar-menu">
+    <div class="navbar-start">
+     
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          خبرگزاری ها
+        </a>
+
+        <div class="navbar-dropdown">
+          <a href="{% url 'tag' 'ایرنا' %}" class="navbar-item">
+            ایرنا
+           </a>
+           <a href="{% url 'tag' 'فوتبالی' %}" class="navbar-item">
+            فوتبالی
+           </a>
+           <a href="{% url 'tag' 'ایمنا' %}" class="navbar-item">
+            ایمنا
+           </a>
+           <a href="{% url 'tag' 'خبرآنلاین' %}" class="navbar-item">
+            خبرآنلاین
+           </a>
+           <a href="{% url 'tag' 'مهر' %}" class="navbar-item">
+            مهر
+           </a>
+           <a href="{% url 'tag' 'فارس' %}" class="navbar-item">
+            فارس
+           </a>
+           <a href="{% url 'tag' 'ورزش سه' %}" class="navbar-item">
+            ورزش سه
+           </a>
+           <a href="{% url 'tag' 'خبرورزشی' %}" class="navbar-item">
+            خبرورزشی
+           </a>
+           <a href="{% url 'tag' 'تسنیم' %}" class="navbar-item">
+            تسنیم
+           </a>
+           <a href="{% url 'tag' 'ایسنا' %}" class="navbar-item">
+            ایسنا
+           </a>
+           <a href="{% url 'tag' 'ایلنا' %}" class="navbar-item">
+            ایلنا
+           </a>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="navbar-end" style="padding-left: 1%;">
+      <a class="navbar-item" href="https://github.com/ammarsalahi/footballet-v1">
+        <img src="{% static 'github.png' %}">
+      </a>
+    </div>
+  </div>
+  
+ 
+</nav>
